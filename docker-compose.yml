@@ -1,0 +1,8 @@
+services:
+    sonar-scanner-jgit-reproducer:
+        build:
+            context: .
+            args:
+                - SCANNER_VERSION=${SCANNER_VERSION}
+        env_file:
+            - ./.env
